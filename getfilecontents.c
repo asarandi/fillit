@@ -6,7 +6,7 @@
 /*   By: asarandi <asarandi@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/01 14:17:46 by asarandi          #+#    #+#             */
-/*   Updated: 2017/10/09 13:16:51 by asarandi         ###   ########.fr       */
+/*   Updated: 2017/10/09 21:07:41 by asarandi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ void		*getfilecontents(char *filename)
 	int		fd;
 	t_uc	*mem;
 
-	if (!(size = getfilesize(filename)))
+	if ((size = getfilesize(filename)) == -1)
 		return (NULL);
 	if ((mem = ft_memalloc(size + 1)) == NULL)
 		return (NULL);
