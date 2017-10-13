@@ -6,7 +6,7 @@
 /*   By: asarandi <asarandi@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/13 11:38:48 by asarandi          #+#    #+#             */
-/*   Updated: 2017/10/13 11:38:51 by asarandi         ###   ########.fr       */
+/*   Updated: 2017/10/13 13:01:58 by asarandi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,10 +53,10 @@ void		*getfilecontents(char *filename)
 	return (NULL);
 }
 
-void	quit(char *s)
+void	quit(char *s, int e)
 {
 	ft_putstr(s);
-	exit(1);
+	exit(e);
 }
 
 int		main(int ac, char **av)
@@ -67,15 +67,15 @@ int		main(int ac, char **av)
 	char	*output;
 
 	if (ac != 2)
-		quit("usage: fillit <input.file>\n");
+		quit("usage: fillit <input.file>\n", 0);
 	if ((size = getfilesize(av[1])) == -1)
-		quit("error\n");
+		quit("error\n", 1);
 	if ((input = getfilecontents(av[1])) == NULL)
-		quit("error\n");
+		quit("error\n", 1);
 	if ((validate(input, size)) != 1)
-		quit("error\n");
+		quit("error\n", 1);
 	if ((puzzle = identify(input, size)) == NULL)
-		quit("error\n");
+		quit("error\n", 1);
 	free(input);
 	output = solve(puzzle);
 	free(puzzle);

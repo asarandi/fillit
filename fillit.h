@@ -6,7 +6,7 @@
 /*   By: asarandi <asarandi@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 00:42:34 by asarandi          #+#    #+#             */
-/*   Updated: 2017/10/13 12:56:09 by asarandi         ###   ########.fr       */
+/*   Updated: 2017/10/13 13:01:21 by asarandi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,6 @@ int		validate(char *mem, size_t size);
 int		validate_block(char *m);
 int		validate_line(char *m, int *d, int *h);
 void	*getfilecontents(char *filename);
-void	quit(char *s);
+void	quit(char *s, int e);
 
 #endif
