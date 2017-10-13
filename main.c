@@ -6,7 +6,7 @@
 /*   By: asarandi <asarandi@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/13 11:38:48 by asarandi          #+#    #+#             */
-/*   Updated: 2017/10/13 13:09:14 by asarandi         ###   ########.fr       */
+/*   Updated: 2017/10/13 13:57:47 by asarandi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ int		main(int ac, char **av)
 	char	*output;
 
 	if (ac != 2)
-		quit("usage: fillit <input.file>\n", 0);
+		quit("usage: fillit <input.file>\n", 64);
 	if ((size = getfilesize(av[1])) == -1)
 		quit("error\n", 1);
 	if ((input = getfilecontents(av[1])) == NULL)
