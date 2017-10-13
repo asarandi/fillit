@@ -6,7 +6,7 @@
 #    By: asarandi <asarandi@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/10/01 14:29:00 by asarandi          #+#    #+#              #
-#    Updated: 2017/10/09 18:29:00 by asarandi         ###   ########.fr        #
+#    Updated: 2017/10/13 11:39:32 by asarandi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,18 +14,11 @@ NAME		= fillit
 CC			= gcc
 CFLAGS		= -Wall -Werror -Wextra
 
-SRC			= ft_memalloc.c \
-			  ft_memcpy.c \
-			  ft_putchar.c \
-			  ft_strlen.c \
-			  ft_putstr.c \
+SRC			= libft.c \
 			  shape.c \
-			  getfilecontents.c \
 			  main.c \
 			  validate.c \
-			  recursion.c \
-			  solve.c \
-			  identify.c
+			  solve.c
 
 OBJ			= $(SRC:%.c=%.o)
 DEPS		= fillit.h

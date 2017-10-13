@@ -6,7 +6,7 @@
 /*   By: asarandi <asarandi@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 00:42:34 by asarandi          #+#    #+#             */
-/*   Updated: 2017/10/09 19:27:12 by asarandi         ###   ########.fr       */
+/*   Updated: 2017/10/13 12:56:09 by asarandi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ typedef	unsigned char	t_uc;
 typedef unsigned int	t_ui;
 
 void	*ft_memcpy(void *dest, const void *src, size_t n);
-size_t	ft_strlen(const char *s);
 void	ft_putchar(char c);
 void	ft_putstr(char const *s);
 void	*ft_memalloc(size_t size);

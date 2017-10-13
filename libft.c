@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memalloc.c                                      :+:      :+:    :+:   */
+/*   libft.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asarandi <asarandi@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/23 15:40:16 by asarandi          #+#    #+#             */
-/*   Updated: 2017/10/01 14:39:27 by asarandi         ###   ########.fr       */
+/*   Created: 2017/10/13 11:30:08 by asarandi          #+#    #+#             */
+/*   Updated: 2017/10/13 11:30:52 by asarandi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,32 @@ void	*ft_memalloc(size_t size)
 		i++;
 	}
 	return (p);
+}
+
+void	*ft_memcpy(void *dest, const void *src, size_t n)
+{
+	unsigned char		*d;
+	const unsigned char	*s;
+	size_t				i;
+
+	d = dest;
+	s = src;
+	i = 0;
+	while (i < n)
+	{
+		d[i] = s[i];
+		i++;
+	}
+	return (void *)(dest);
+}
+
+void	ft_putchar(char c)
+{
+	write(1, &c, sizeof(c));
+}
+
+void	ft_putstr(char const *s)
+{
+	while (*s)
+		ft_putchar(*s++);
 }
