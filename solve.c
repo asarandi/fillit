@@ -6,13 +6,13 @@
 /*   By: asarandi <asarandi@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/13 11:36:05 by asarandi          #+#    #+#             */
-/*   Updated: 2017/10/13 11:36:11 by asarandi         ###   ########.fr       */
+/*   Updated: 2017/10/13 13:09:32 by asarandi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
 
-int	recursion(char *s, int i, int f, int *map)
+int		recursion(char *s, int i, int f, int *map)
 {
 	int	x;
 	int	y;

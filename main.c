@@ -6,13 +6,13 @@
 /*   By: asarandi <asarandi@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/13 11:38:48 by asarandi          #+#    #+#             */
-/*   Updated: 2017/10/13 13:01:58 by asarandi         ###   ########.fr       */
+/*   Updated: 2017/10/13 13:09:14 by asarandi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
 
-int			getfilesize(char *filename)
+int		getfilesize(char *filename)
 {
 	int		fd;
 	int		size;
@@ -31,7 +31,7 @@ int			getfilesize(char *filename)
 		return (-1);
 }
 
-void		*getfilecontents(char *filename)
+void	*getfilecontents(char *filename)
 {
 	int		size;
 	int		r;
