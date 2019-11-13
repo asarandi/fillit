@@ -88,12 +88,12 @@ void		solve(int *t)
 {
 	int		idx;
 	int		done;
-    int     count;
+	int		count;
 	char	**square;
 
-    count = -1;
-    while (t[++count])
-        ;
+	count = -1;
+	while (t[++count])
+		;
 	idx = 2;
 	while (idx * idx < (count << 2))
 		++idx;
