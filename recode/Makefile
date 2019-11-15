@@ -9,9 +9,6 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) -o $@ $^
 
-$(OBJ): $(SRC)
-	$(CC) -c $(CFLAGS) $^
-
 clean:
 	$(RM) $(OBJ)
 

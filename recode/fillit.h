@@ -18,7 +18,7 @@
 # include <stdlib.h>
 
 # define BUF_SIZE 1024
-# define MAX_FILE_SIZE ((20 * 26) + (26 - 1))
+# define MAX_FILE_SIZE ((21 * 26) - 1)
 
 int			is_valid(char *buf, int size, int *t);
 char		**make_square(int size);
